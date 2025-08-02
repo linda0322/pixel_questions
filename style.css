@@ -24,13 +24,29 @@ body {
   width: 400px; 
   height: 300px; 
   image-rendering: pixelated; 
+  visibility: hidden;
 }
+
+#pixel-image-container.ready #pixel-image {
+  visibility: visible;
+}
+
+#covers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 400px;
+  height: 300px;
+  pointer-events: none;
+}
+
 
 .pixel-cover {
   position: absolute;
   background: #191919;
-  opacity: 0.95;
-  transition: opacity 0.4s;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 #question-container {
