@@ -13,6 +13,13 @@ body {
   align-items: center;
 }
 
+#question-container {
+  color: white !important;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+
 #pixel-image-container { 
   position: relative; 
   width: 400px; 
@@ -36,10 +43,4 @@ body {
 button { 
   font-size: 1.2em; 
   margin: 6px 8px; 
-}
-
-#question-container {
-  color: #ffffff;
-  font-size: 1.4em;
-  text-align: center;
 }
