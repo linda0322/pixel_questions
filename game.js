@@ -44,8 +44,6 @@ imageContainer.classList.add('ready');
 // Game State
 let currentQ = 0;
 const questionContainer = document.getElementById('question-container');
-
-// Show current question
 function showQuestion() {
   if (currentQ >= questions.length) {
     questionContainer.innerHTML = "<b>🎉 𝗬𝗘𝗔𝗛 🎉</b>";
@@ -78,5 +76,4 @@ function showQuestion() {
     }
   });
 }
-covers.forEach(c => c.style.opacity = 1);
 showQuestion();
