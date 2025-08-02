@@ -68,7 +68,7 @@ function showQuestion() {
         currentQ++;
         showQuestion();
       } else {
-        alert("𝗪𝗥𝗢𝗡𝗚 😑 𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡");
+        alert("𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡 🐶");
       }
     };
   });
