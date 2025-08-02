@@ -1,0 +1,60 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0;
+  background: #191919; 
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pixel-image-container { 
+  position: relative; 
+  width: 400px; 
+  height: 400px; 
+  margin-bottom: 20px;
+}
+
+#pixel-image { 
+  width: 400px; 
+  height: 400px; 
+  image-rendering: pixelated; 
+  visibility: hidden;
+}
+
+#pixel-image-container.ready #pixel-image {
+  visibility: visible;
+}
+
+#covers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+}
+
+
+.pixel-cover {
+  position: absolute;
+  background: #191919;
+  opacity: 1;
+  transition: opacity 0.5s;
+  pointer-events: auto;
+}
+
+#question-container {
+  color: white;
+}
+
+button { 
+  font-size: 1.2em; 
+  margin: 6px 8px; 
+}
