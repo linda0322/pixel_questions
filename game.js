@@ -1,8 +1,7 @@
-const GRID_ROWS = 3; // You can adjust for your image/questions
+const GRID_ROWS = 3;
 const GRID_COLS = 5;
 const totalTiles = GRID_ROWS * GRID_COLS;
 
-// Random shuffle utility
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -10,16 +9,16 @@ function shuffle(array) {
   }
 }
 
-// Prepare grid overlays
 const coversDiv = document.getElementById('covers');
 const img = document.getElementById('pixel-image');
+const imageContainer = document.getElementById('pixel-image-container');
+const questionContainer = document.getElementById('question-container');
 coversDiv.style.position = "absolute";
 coversDiv.style.top = "0";
 coversDiv.style.left = "0";
 coversDiv.style.width = img.width + "px";
 coversDiv.style.height = img.height + "px";
 
-// Create cover tiles, store refs for later reveal
 let covers = [];
 for (let r = 0; r < GRID_ROWS; r++) {
   for (let c = 0; c < GRID_COLS; c++) {
@@ -34,9 +33,13 @@ for (let r = 0; r < GRID_ROWS; r++) {
   }
 }
 
-// Shuffle questions and grid covers so random tile is revealed per answer
-shuffle(questions); // your questions[], from questions.js
+shuffle(questions);
 shuffle(covers);
+
+covers.forEach(c => c.style.opacity = 1);
+
+coversDiv.style.visibility = "visible";
+imageContainer.classList.add('ready');
 
 // Game State
 let currentQ = 0;
@@ -75,7 +78,5 @@ function showQuestion() {
     }
   });
 }
-
-// Hide all tiles at start
 covers.forEach(c => c.style.opacity = 1);
 showQuestion();
