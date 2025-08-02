@@ -1,10 +1,10 @@
 body {
   min-height: 100vh;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  background: #191919; 
+  background: #191919;
 }
 
 #game {
@@ -13,17 +13,17 @@ body {
   align-items: center;
 }
 
-#pixel-image-container { 
-  position: relative; 
-  width: 400px; 
-  height: 400px; 
+#pixel-image-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
 }
 
-#pixel-image { 
-  width: 400px; 
-  height: 400px; 
-  image-rendering: pixelated; 
+#pixel-image {
+  width: 400px;
+  height: 400px;
+  image-rendering: pixelated;
   visibility: hidden;
 }
 
@@ -41,7 +41,6 @@ body {
   pointer-events: none;
 }
 
-
 .pixel-cover {
   position: absolute;
   background: #191919;
@@ -54,7 +53,7 @@ body {
   color: white;
 }
 
-button { 
-  font-size: 1.2em; 
-  margin: 6px 8px; 
+button {
+  font-size: 1.2em;
+  margin: 6px 8px;
 }
