@@ -47,6 +47,7 @@ body {
   background: #191919;
   opacity: 1;
   transition: opacity 0.5s;
+  pointer-events: auto;
 }
 
 #question-container {
