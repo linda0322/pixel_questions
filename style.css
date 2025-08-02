@@ -28,7 +28,7 @@ body {
 
 .pixel-cover {
   position: absolute;
-  background: white;
+  background: #191919;
   opacity: 0.95;
   transition: opacity 0.4s;
 }
