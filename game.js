@@ -1,3 +1,11 @@
+const imageList = ['img1.jpg', 'img2.jpg', 'img3.jpg'];
+
+const randomIdx = Math.floor(Math.random() * imageList.length);
+const randomImage = imageList[randomIdx];
+
+const img = document.getElementById('pixel-image');
+img.src = randomImage;
+
 const GRID_ROWS = 4;
 const GRID_COLS = 3;
 const totalTiles = GRID_ROWS * GRID_COLS;
