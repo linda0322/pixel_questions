@@ -13,13 +13,6 @@ body {
   align-items: center;
 }
 
-#question-container {
-  color: white !important;
-  font-size: 1.4em;
-  text-align: center;
-}
-
-
 #pixel-image-container { 
   position: relative; 
   width: 400px; 
