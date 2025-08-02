@@ -33,6 +33,10 @@ body {
   transition: opacity 0.4s;
 }
 
+#question-container {
+  color: white;
+}
+
 button { 
   font-size: 1.2em; 
   margin: 6px 8px; 
