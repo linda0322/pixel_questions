@@ -37,3 +37,9 @@ button {
   font-size: 1.2em; 
   margin: 6px 8px; 
 }
+
+#question-container {
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+}
