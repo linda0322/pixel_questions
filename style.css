@@ -1,1 +1,9 @@
-
+#pixel-image-container { position: relative; width: 400px; height: 300px; }
+#pixel-image { width: 400px; height: 300px; image-rendering: pixelated; }
+.pixel-cover {
+  position: absolute;
+  background: white;
+  opacity: 0.95;
+  transition: opacity 0.4s;
+}
+button { font-size: 1.2em; margin: 6px 8px; }
