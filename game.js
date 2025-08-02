@@ -43,7 +43,6 @@ imageContainer.classList.add('ready');
 
 // Game State
 let currentQ = 0;
-const questionContainer = document.getElementById('question-container');
 function showQuestion() {
   if (currentQ >= questions.length) {
     questionContainer.innerHTML = "<b>🎉 𝗬𝗘𝗔𝗛 🎉</b>";
@@ -61,11 +60,9 @@ function showQuestion() {
     ${choices.map(ch => `<button>${ch}</button>`).join(" ")}
   `;
 
-  // Bind answer logic
   questionContainer.querySelectorAll('button').forEach(btn => {
     btn.onclick = function() {
       if (btn.innerText === q.answer) {
-        // Reveal tile:
         covers[currentQ].style.opacity = 0;
         alert("𝗖𝗢𝗥𝗥𝗘𝗖𝗧 👍🏻");
         currentQ++;
@@ -73,7 +70,8 @@ function showQuestion() {
       } else {
         alert("𝗪𝗥𝗢𝗡𝗚 😑 𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡");
       }
-    }
+    };
   });
 }
+
 showQuestion();
