@@ -45,7 +45,7 @@ const questionContainer = document.getElementById('question-container');
 // Show current question
 function showQuestion() {
   if (currentQ >= questions.length) {
-    questionContainer.innerHTML = "<b>All done! See the full picture!</b>";
+    questionContainer.innerHTML = "<b>🎉 𝗬𝗘𝗔𝗛 🎉</b>";
     covers.forEach(c => c.style.opacity = 0);
     return;
   }
@@ -66,11 +66,11 @@ function showQuestion() {
       if (btn.innerText === q.answer) {
         // Reveal tile:
         covers[currentQ].style.opacity = 0;
-        alert("Correct!");
+        alert("𝗖𝗢𝗥𝗥𝗘𝗖𝗧 👍🏻");
         currentQ++;
         showQuestion();
       } else {
-        alert("Try again!");
+        alert("𝗪𝗥𝗢𝗡𝗚 😑 𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡");
       }
     }
   });
